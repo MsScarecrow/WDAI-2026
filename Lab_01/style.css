@@ -16,6 +16,22 @@ body {
       justify-content: center;
 }
 
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(2, 100px);
+  /*background-color: dodgerblue;*/
+  gap: 15px;
+}
+
+
+.square {
+  width:100px;
+  height:100px;
+  /*margin:10px;*/
+  object-fit: fill;
+}
+
 .collapse {
   border-collapse: collapse;
 }

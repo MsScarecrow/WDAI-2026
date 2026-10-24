@@ -1,0 +1,79 @@
+.staatliches-regular {
+  font-family: "Staatliches", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+    font-family: "Staatliches", sans-serif;
+    background-color: #2d2d2d;
+    height: 100vh;
+}
+
+.navbar-link{
+    text-decoration: none;
+    color: #f2efef;
+    margin-left: 40px;
+    transition: color 0.3s;
+}
+
+
+body.body-home {
+
+    /*background-image: url('bgd_animated.gif');*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    position: relative;
+}
+
+.logo{
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.gif-div{
+    max-width: 1920px;
+    width: 100%;
+    aspect-ratio: 16/9;
+    margin: 0;
+    padding: 0;
+    background-image: url('bgd_animated.gif');
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;  
+    align-items: flex-start;
+    background-position: center;
+    text-align: right;
+    color: white;
+}
+
+.gif-div-text{
+    font-family: "Staatliches", sans-serif;
+    max-width: 400 px;
+    width: 25%;
+    margin: 20px;
+    text-align: right;
+    color: white;
+}
+
+
+.main-header {
+    background-color: #650e20;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.main-footer {
+    background-color: #650e20;
+    color: white;
+}
