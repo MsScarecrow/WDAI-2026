@@ -12,15 +12,59 @@ html {
 
 .navbar-link{
     text-decoration: none;
-    color: #f2efef;
+    color: #b2b2b2;
     margin-left: 40px;
     transition: color 0.3s;
+}
+
+.navbar-link-active{
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 40px;
+    transition: color 0.3s;
+}
+
+.gallery{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gallery-image{
+    max-width: 420px;
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+.gallery-top-image{
+    display: block; 
+    width: 70%;
+    aspect-ratio: 16/9;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.central-container{
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.break {
+    margin-bottom: 20px; 
 }
 
 
 body.body-home {
 
-    /*background-image: url('bgd_animated.gif');*/
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -35,7 +79,6 @@ body.body-home {
     align-items: center;
     justify-content: center;
 }
-
 
 .gif-div{
     max-width: 1920px;
