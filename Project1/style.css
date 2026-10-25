@@ -138,6 +138,9 @@ body.body-home {
 .timeline-element{
     padding: 10px 50px;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 35%;
     animation: movedown 1s linear forwards;
     opacity: 0;
@@ -157,17 +160,14 @@ body.body-home {
 }
 
 .timeline-element img{
-    position: absolute;
-    width: 40px;
-    border-radius: 50%;
-    right: -20px;
-    top: 32px;
-    z-index: 10;
-    
+    max-width: 80%;
+    transition: transform 0.3s ease; 
 }
-.right-container img{
-    left: -20px;
+
+.timeline-element img:hover {
+    transform: scale(2); 
 }
+
 .timeline::after{
     content: ' ';
     position: absolute;
@@ -178,7 +178,7 @@ body.body-home {
     left: 50%;
     margin-left: -3px;
     z-index: -1;
-    animation: moveline 6s linear forwards;
+    animation: moveline 10s linear forwards;
 }
 
 @keyframes moveline{
@@ -224,7 +224,18 @@ body.body-home {
 .timeline-element:nth-child(6){
     animation-delay: 5s;
 }
-
+.timeline-element:nth-child(7){
+    animation-delay: 6s;
+}
+.timeline-element:nth-child(8){
+    animation-delay: 7s;
+}
+.timeline-element:nth-child(9){
+    animation-delay: 8s;
+}
+.timeline-element:nth-child(10){
+    animation-delay: 9s;
+}
 
 .left-container-arrow{
     height: 0;
