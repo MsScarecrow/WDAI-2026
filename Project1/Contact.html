@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +20,37 @@
             <a href="Quiz.html" class="navbar-link">Quiz</a>
         </nav>
     </header>
+    <div class="break"></div>
+    <form id="ContactForm">
+        <div class = "contact-form">
+            <div class = "form-element">
+                <label for="email"> E-Mail Address:</label>
+                <input type = "text" id="email" name="email" required minlength="5">
+            </div>
+            <div class = "form-element">
+                <label for="subject"> Subject:</label>
+                <select id="subject" name="subject" required>
+                    <option value=""> Select subject</option>
+                    <option value="feedback"> Feedback </option>
+                    <option value="guide"> Gameplay guide </option>
+                    <option value="report"> Bug report </option>
+                    <option value="support"> Technical support </option>
+                    <option value="collab"> Collaboration </option>
+                </select>
+            </div>
 
+            <div class = "form-element">
+                <label for="message"> Message:</label>
+                <textarea id="message" name="message" placeholder="Type your message here..."></textarea>
+            </div>
+            <div class = "form-element">
+                <button type="submit" id="submitButton"> Send Message </button>
+            </div>
+        </div>
+
+    </form>
+    
+    <script src="ContactForm.js"></script>
 
     
     <footer class="main-footer">

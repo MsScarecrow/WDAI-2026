@@ -262,3 +262,31 @@ body.body-home {
     left: 15px;
 
 }
+
+
+.contact-form {
+    display: flex;
+    flex-direction: column; 
+    background-color: #650e20;
+    gap: 25px; 
+    max-width: 400px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-form select,
+.contact-form textarea,
+.contact-form button
+{
+    font-family: "Staatliches", sans-serif;
+    color: #000000;
+}
+
+.form-element {
+    font-family: "Staatliches", sans-serif;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    padding: 10px;
+}
