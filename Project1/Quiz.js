@@ -1,3 +1,32 @@
+const results = {
+    Cyprian:
+    {
+        description: "lorem ipsum cyprian",
+        image: "QuizResults/Cyprian.png"
+    },
+    Irka:
+    {
+        description: "lorem ipsum irka",
+        image: "QuizResults/Irka.png"
+    },
+    Lucyna:
+    {
+        description: "lorem ipsum lucyna",
+        image: "QuizResults/Lucyna.png"
+    },
+    Piotr:
+    {
+        description: "lorem ipsum piotr",
+        image: "QuizResults/Piotr.png"
+    },
+    Urlyk:
+    {
+        description: "lorem ipsum urlyk",
+        image: "QuizResults/Urlyk.png"
+    },
+}
+
+
 let scores = {
     Cyprian: 0,
     Irka: 0,
@@ -104,7 +133,15 @@ function showResult(){
             bestCharacter = char;
         }
     }
-    quizContainer.innerText=`Jesteś ${bestCharacter}!!!`;
+    const imageLink = results[bestCharacter].image;
+    const description = results[bestCharacter].description;
+    
+
+    quizContainer.innerHTML =`<h2>You are ${bestCharacter}!</h2>
+    <img src="${imageLink}" width:200px>
+    <div class="break">
+    <p>${description}</p>
+    `;
 }
 
 loadQuestion();

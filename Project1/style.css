@@ -369,6 +369,9 @@ html,body {
     justify-content: center;
 
     gap: 1.5rem;
+
+    font-size: 1.8rem;
+    color: #ffffff;
 }
 
 .question-container{
