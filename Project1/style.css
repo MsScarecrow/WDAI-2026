@@ -373,6 +373,11 @@ html,body {
     font-size: 1.8rem;
     color: #ffffff;
 }
+.quiz-container p{
+    width:50%;
+    margin: 0 auto;
+    text-align: center;
+}
 
 .question-container{
     font-size: 1.8rem;
@@ -390,4 +395,8 @@ html,body {
     cursor: pointer;
     padding: 1.2rem 1.2rem;
     align-self: center;
+    transition: background-color 0.3s;
+}
+.answer-button:hover{
+    background-color: #480000;
 }
