@@ -1,7 +1,6 @@
 const contactForm = document.getElementById("ContactForm");
 
 contactForm.addEventListener("submit", function(event) {
-    event.preventDefault();
 
     const emailValue = document.getElementById("email").value;
     const subjectValue = document.getElementById("subject").value;
@@ -12,8 +11,15 @@ contactForm.addEventListener("submit", function(event) {
         subject: subjectValue,
         message: messageValue
     };
-
-    alert(`Thanks for reaching out!`);
-
-    contactForm.reset();
+    if (!emailValue.includes("@") || !emailValue.includes("."))
+    {
+        event.preventDefault();
+        alert(`Incorrect e-mail address`);
+    }
+    else
+    {
+        alert(`Thanks for reaching out!`);
+        contactForm.reset();
+    }
+    
 });
