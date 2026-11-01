@@ -125,7 +125,7 @@ const questions = [
                 character: "Lucyna" 
             },
             {
-                text: "As someone who never turned their back on the ones they loved",
+                text: "A chance to make sure my loved ones never have to face anything alone",
                 character: "Cyprian" 
             },
             {
