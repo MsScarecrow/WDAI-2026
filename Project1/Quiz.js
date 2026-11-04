@@ -2,27 +2,27 @@ const results = {
     Cyprian:
     {
         description: "Cyprian was a young smuggler who lived in an old shipping container with his brother Kamil. He lost his arm trying to help Irka get out of her perilous journey to Selev. Recently, he set out to search for his brother, but never came back. Cyprian is best known for his bravery and tendency to leap into action for the ones he loves.",
-        image: "QuizResults/Cyprian.png"
+        image: "QuizResults/Cyprian.webp"
     },
     Irka:
     {
         description: "Irka is a 16-year old courier raised on the roofs of Bastion and the main character of Solaris. She is the granddaughter of Lucyna, who founded Lunula sanitary units. She is best known for her signature red hood and rebellious character. Irka is very courageous, especially for someone her age, and cares deeply about her family and friends.",
-        image: "QuizResults/Irka.png"
+        image: "QuizResults/Irka.webp"
     },
     Lucyna:
     {
         description: "Lucyna is the founder of Lunula sanitary units and the grandmother of Irka, Solaris's protagonist. She's always been a strong woman, and even in the face of illness, she remains caring, resilient and as Polish as they come. She is one of the few people in the city who remember it before the conflict between Selev and Bastion.",
-        image: "QuizResults/Lucyna.png"
+        image: "QuizResults/Lucyna.webp"
     },
     Piotr:
     {
         description: "Piotr is the acting leader of Lunula sanitary units during the founder's illness. He always keeps both his feet firmly on the ground and cares deeply for Bastion, doing everything in his power to find a cure for the mysterious disease.",
-        image: "QuizResults/Piotr.png"
+        image: "QuizResults/Piotr.webp"
     },
     Urlyk:
     {
         description: "Urlyk is the exiled founder of Lunula sanitary units, who now resides in Selev and acts as the leader of the local community. On the brink of insanity and working on a cure for Solaris alone, he remains one of the city's greatest mysteries.",
-        image: "QuizResults/Urlyk.png"
+        image: "QuizResults/Urlyk.webp"
     },
 }
 

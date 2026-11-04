@@ -11,30 +11,79 @@ html,body {
     margin: 0;
     padding: 0;
     width: 100%;
-    background-image: url('bgd_static.png');
+    background-image: url('bgd_static.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-.navbar-link{
+.main-header {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), transparent);
+    color: white;
+    padding: 2rem 3rem; 
+    font-size: 1.5rem;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.navbar-link, .navbar-link-active {
     text-decoration: none;
     color: #b2b2b2;
     margin-left: 40px;
     transition: color 0.3s;
 }
 
-.navbar-link:hover {
+.navbar-link:hover, .navbar-link-active {
     color: #ffffff;
 }
 
+#nav-links .icon {
+    display: none;
+}
 
-.navbar-link-active{
-    text-decoration: none;
-    color: #ffffff;
-    margin-left: 40px;
-    transition: color 0.3s;
+@media screen and (max-width: 750px) {
+    #nav-links a:not(.icon) {
+        display: none;
+    }
+    #nav-links .icon {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size: 1.8rem;
+    }
+}
+@media screen and (max-width: 750px) {
+    #nav-links.responsive {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.95);
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0;
+        text-align: center;
+    }
+    #nav-links.responsive a {
+        display: block;
+        margin: 12px 0;
+        margin-left: 0; 
+    }
+    
+    #nav-links.responsive .icon {
+        position: static; 
+        display: block;
+        margin-bottom: 10px;
+    }
 }
 
 .article-container{
@@ -53,8 +102,19 @@ html,body {
     backdrop-filter: blur(25px);
 }
 
+.gallery-bgd {
+    
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(25px);
+    padding: 4rem 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
 .gallery{
-    width: 70%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -72,7 +132,7 @@ html,body {
 
 .gallery-top-image{
     display: block; 
-    width: 70%;
+    width: 100%;
     aspect-ratio: 16/9;
     margin-left: auto;
     margin-right: auto;
@@ -153,22 +213,6 @@ html,body {
     margin-bottom: 1.5rem;
 }
 
-
-.main-header {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), transparent);
-    color: white;
-    padding: 2rem 3rem; 
-    font-size: 1.5rem;
-    display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    justify-content: space-between;
-    align-items: center;
-    box-sizing: border-box;
-}
 
 .main-footer {
     background: linear-gradient(to top, rgba(0, 0, 0, 1), transparent);
@@ -400,3 +444,4 @@ html,body {
 .answer-button:hover{
     background-color: #480000;
 }
+
