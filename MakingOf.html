@@ -8,16 +8,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class = "body-home">
+    <body class = "body-home">
     <header class="main-header">
         <img class="logo" src = "solaris_logo.png" alt="logo">
-        <nav class="nav-links">
+        <nav id="nav-links">
             <a href="index.html" class="navbar-link">Home</a>
             <a href="Gallery.html" class="navbar-link">Gallery</a>
             <a href="MakingOf.html" class="navbar-link-active">Making of Solaris</a>
             <a href="Contact.html" class="navbar-link">Contact</a>
             <a href="Quiz.html" class="navbar-link">Quiz</a>
+            <a href="javascript:void(0);" class="icon navbar-link" onclick="openCloseMenu()">
+        <i class="fa fa-bars"></i></a>
         </nav>
     </header>
     <div class="large-break"></div>
@@ -131,17 +135,12 @@
 
 
     </article>
-    
-    
-
-
-
-
 
     <footer class="main-footer">
         <p>&copy; 2026 Matylda Miedzińska</p>
     </footer>
-
+    
+    <script src="HamburgerMenu.js"></script>
 
 </body>
 
